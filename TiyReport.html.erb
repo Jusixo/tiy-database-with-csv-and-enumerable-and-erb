@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Book Report</title>
+    <title>Employee Report</title>
     <style media="screen">
       ul {
         list-style: none;
@@ -19,12 +19,12 @@
   <body>
     <% @profiles.each do |person| %>
       <ul>
-        <li>name<%= person.name %></li>
-        <li>phone<%= person.phone %></li>
-        <li>address<%= person.address  %></li>
-        <li>$<%= person.salary %></li>
-        <li>slack account<%= person.slack  %></li>
-        <li>github account<%= person.github  %></li>
+        <li>name: <%= person.name %></li>
+        <li>phone: <%= person.phone %></li>
+        <li>address: <%= person.address  %></li>
+        <li>Salary: <%= person.salary %></li>
+        <li>slack account: <%= person.slack  %></li>
+        <li>github account: <%= person.github  %></li>
       </ul>
     <% end %>
   </body>
