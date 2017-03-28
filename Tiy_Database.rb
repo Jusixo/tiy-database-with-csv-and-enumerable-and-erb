@@ -134,8 +134,8 @@ class TiyDatabase
   end
 
   def tiy_report_html
-    template_string = ERB.new(File.read("TiyReport.html.erb"))
-    html = erb_template.result(binding)
+    template = ERB.new(File.read("TiyReport.html.erb"))
+    html = template.result(binding)
 
     File.write("TiyReport.html", html)
 
